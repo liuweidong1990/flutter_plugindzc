@@ -53,4 +53,9 @@ class FlutterPlugindzc {
    final double response = await _channel.invokeMethod('getScale');
     return response;
   }
+  static Future<String> getZl(String message) async {
+
+    final String response = await _channel.invokeMethod('getZl');
+    return response;
+  }
 }
